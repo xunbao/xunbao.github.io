@@ -1,7 +1,6 @@
 * {
 	border: px solid red;
 	color:white;
-	transition: all .4s;
 	font-family: 'Open Sans', sans-serif;
 }
 body{
@@ -83,6 +82,7 @@ div.header > div {
 	border-radius: 4px 4px 4px 4px;
 	font-size: 20px;
 	margin-top: 2%;
+	transition: all .4s
 }
 
 .fb:hover {
@@ -106,13 +106,33 @@ td {
 	border: 1px solid white;
 	padding: 8%;
 	border-radius: 5px 5px 5px 5px;
+	background-color: rgba(1, 1, 3, 0.46);
 }
 
+.devname {
+	transition: all 1s;
+	opacity: 0;
+	padding: 2%;
+	border: 1px solid white;
+	border-radius: 5px 5px 5px 5px;
+	margin-top: 2%;
+	background-color: rgba(1, 1, 3, 0.46);
+}
 
+.img-responsive {
+	transition: all 1s;
+}
 
+.backin {
+	padding: 3%;
+	border: 0px solid white;
+	border-radius: 20px 20px 10px 10px;
+}
 
-
-
+.backin > img {
+	border: 1px solid white;
+	border-radius: 10px 10px 0px 0px;
+}
 
 
 
