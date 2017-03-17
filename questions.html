@@ -14,13 +14,13 @@
     
     <!-- Custom styles for this template -->
     <link href="css/stylex.css" rel="stylesheet">
-    <link href="css/model.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/model.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 
-<body style="height: 99%;">
+<body style="height: 100%;">
     <!--The Header-->
-        <div class="container-fluid row header" style="text-align: center;width: 100%;">
+        <div class="container-fluid row header" style="text-align: center;width: 100%">
             <div class="col-md-4" style="border: 0px solid red;border-radius: 0px 0px 0px 10px;text-align: left;padding-left: 4%;">
               <h2><a class="ok"href="questions.html">Xunbao</a></h3>
             </div>
@@ -34,7 +34,7 @@
               <h5>Developer</h5>
             </div>
             <div class="col-md-2 lo" style="">
-              <h5 id="loginBtn1">Login</h5>
+              <h5 id="logout">Log out</h5>
             </div>
           </div>
 
@@ -46,11 +46,15 @@
         </div>
         <div class="col-md-8" style="position: relative;">
           <div class="container inbox">
-              <h3>Welcome to Xunbao!</h3>
-              <img src="img/logo1.png" width="80%"><br>
-              <button class="fb" id="loginBtn">
-               Facebook Login
-              </button>
+              <h3 id="level"></h3>
+              <div id="que-div">
+              </div>
+              <div id="div-ans">
+                <form id="ansForm">
+                  <input id="answer" type="text" name="text" style="margin-left: 20px;margin-right: 20px;border:0px solid red;border-radius: 4px 4px 4px 4px;color:black"></input>
+                  <button id="submit-button" type="submit" class="fb ">Submit</button>
+                </form>
+                </div>
           </div>
         </div>
         <div class="col-md-2">
@@ -58,8 +62,8 @@
         </div>
         </div>
     </div>
-     <div id="loadModel" class="modal">
-  <!-- Modal content -->
+<div id="loadModel" class="modal">
+    <!-- Modal content -->
   <div class="modal-content">
     <div class="modal-body body-2">
       <img width="100%" height="100%" alt="" src="img/loading.gif">
@@ -72,10 +76,12 @@
   <div class="modal-content">
     <div class="modal-header body-2">
      <span id="close-span">x</span>
-      <p id="response">Your Query has been submitted</p>
+      <div id="response">
+      </div>
     </div> 
   </div>
 </div>
+
   <!--Prizes-->
     <div id="prizeModel" class="modal">
   <!-- Modal content -->
@@ -84,15 +90,15 @@
      <span id="close-spanx" style="position:absolute;right:9px;top:-6px;font-size:25px">x</span>
       <h1>1st Prize</h1>
       <div class="cards">
-       Cash Prize - 500rs/-<br> + Bluetooth Speaker<br>+ Certificate
+        Bluetooth Speaker<br> 500rs/-<br> Certificate
       </div><br>
       <h2>2nd Prize</h2>
       <div class="cards">
-       Cash Prize - 300rs/-<br>+ VR Handset<br>+  Certificate
+        VR Handset<br> 300rs/-<br> Certificate
       </div><br>
       <h3>3rd Prize</h3>
       <div class="cards">
-       Cash Prize - 200rs/-<br>+ Certificate
+        200rs/-<br> Certificate
       </div>
 
     </div>
@@ -120,7 +126,9 @@
 </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="js/fb.js" ></script><script src="js/fb.js" ></script>
+<script src="js/home.js"></script>
+<script src="js/check.js"></script>
+<script type="text/javascript" src="js/fb2.js"></script>
 <script>
 $(document).ready(function() {
   $('#prizes').click(function(){

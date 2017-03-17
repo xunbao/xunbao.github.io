@@ -18,9 +18,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 
-<body style="height: 99%;">
+<body style="height: 100%;">
     <!--The Header-->
-        <div class="container-fluid row header" style="text-align: center;width: 100%;">
+        <div class="container-fluid row header" style="text-align: center;width: 100%">
             <div class="col-md-4" style="border: 0px solid red;border-radius: 0px 0px 0px 10px;text-align: left;padding-left: 4%;">
               <h2><a class="ok"href="questions.html">Xunbao</a></h3>
             </div>
@@ -33,24 +33,24 @@
             <div class="col-md-2 de" id="developer">
               <h5>Developer</h5>
             </div>
-            <div class="col-md-2 lo" style="">
-              <h5 id="loginBtn1">Login</h5>
+            <div class="col-md-2 lo" id="lilo">
+              <h5 id="logout">Log out</h5>
             </div>
           </div>
 
       <!--The Body-->
-    <div class="container-fluid wrapper" style="height:90%;">
+    <div class="container-fluid wrapper" style="height:90%;overflow-y: scroll">
         <div class="row" style="height: 100%">
         <div class="col-md-2">
         
         </div>
         <div class="col-md-8" style="position: relative;">
           <div class="container inbox">
-              <h3>Welcome to Xunbao!</h3>
-              <img src="img/logo1.png" width="80%"><br>
-              <button class="fb" id="loginBtn">
-               Facebook Login
-              </button>
+              <h3>LeaderBoard</h3>
+              <h5>Check Out where you rank among your friends </h5><br>
+              <div id="ranklist">
+                  
+              </div>
           </div>
         </div>
         <div class="col-md-2">
@@ -58,7 +58,7 @@
         </div>
         </div>
     </div>
-     <div id="loadModel" class="modal">
+       <div id="loadModel" class="modal">
   <!-- Modal content -->
   <div class="modal-content">
     <div class="modal-body body-2">
@@ -76,6 +76,7 @@
     </div> 
   </div>
 </div>
+
   <!--Prizes-->
     <div id="prizeModel" class="modal">
   <!-- Modal content -->
@@ -84,15 +85,15 @@
      <span id="close-spanx" style="position:absolute;right:9px;top:-6px;font-size:25px">x</span>
       <h1>1st Prize</h1>
       <div class="cards">
-       Cash Prize - 500rs/-<br> + Bluetooth Speaker<br>+ Certificate
+        Bluetooth Speaker<br> 500rs/-<br> Certificate
       </div><br>
       <h2>2nd Prize</h2>
       <div class="cards">
-       Cash Prize - 300rs/-<br>+ VR Handset<br>+  Certificate
+        VR Handset<br> 300rs/-<br> Certificate
       </div><br>
       <h3>3rd Prize</h3>
       <div class="cards">
-       Cash Prize - 200rs/-<br>+ Certificate
+        200rs/-<br> Certificate
       </div>
 
     </div>
@@ -118,9 +119,12 @@
     </div>
   </div>
 </div>
+
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="js/fb.js" ></script><script src="js/fb.js" ></script>
+<script src="js/ranklist.js"></script>
+<script type="text/javascript" src="js/fb2.js"></script>
+<script type="text/javascript" src="js/fb3.js"></script>
 <script>
 $(document).ready(function() {
   $('#prizes').click(function(){
