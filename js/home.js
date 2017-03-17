@@ -13,7 +13,7 @@ $( document ).ready(function(){
 	 $.ajax({
                       url: "http://xunbao.herokuapp.com/api/home/",
                   type:'POST',
-                  data:{name:localStorage.xunbao_name,fb_id:localStorage.xunbao_id,email:localStorage.xunbao_email},
+                  data:{name:localStorage.xunbao_name,fb_id:localStorage.xunbao_id,email_id:localStorage.xunbao_email},
 
                 success: function(result){
                    //alert(JSON.stringify(result));
