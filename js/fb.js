@@ -44,7 +44,7 @@
         }
          function loadQuestion(){
                loadModel.style.display="none";
-               window.location.href="http://localhost:8080/xunbao/questions.html"
+               window.location.href="questions.html"
           }
         function logUserOut(){
             FB.logout(function(response) {
