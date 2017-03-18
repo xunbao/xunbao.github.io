@@ -11,7 +11,7 @@ $( document ).ready(function(){
   loadModel.style.display="block";
 
 	 $.ajax({
-                      url: "http://xunbao1.herokuapp.com/api/home/",
+                      url: "http://xunbao.herokuapp.com/api/home/",
                   type:'POST',
                   data:{name:localStorage.xunbao_name,fb_id:localStorage.xunbao_id,email_id:localStorage.xunbao_email},
 
