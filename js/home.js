@@ -19,7 +19,7 @@ $( document ).ready(function(){
                    //alert(JSON.stringify(result));
                    $('#level').text("level "+result.level);
                    $('#que-div').html(result.description);
-                   if (result.level==12) {
+                   if (result.level==14) {
                     $('#level').text("Congrats !!")
                     $('#answer').css({"display":"none"});
                     $('#submit-button').css({"display":"none"});
