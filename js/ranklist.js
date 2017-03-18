@@ -15,7 +15,7 @@ $( document ).ready(function(){
   }
   loadModel.style.display="block";
 	 $.ajax({
-                      url: "http://xunbao.herokuapp.com/api/ranklist/",
+                      url: "http://xunbao1.herokuapp.com/api/ranklist/",
                   type:'GET',
 
                 success: function(result){

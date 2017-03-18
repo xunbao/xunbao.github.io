@@ -24,7 +24,7 @@ $( document ).ready(function(){
         else{
                 //alert("yes"+ ans);
                 $.ajax({
-                      url: "http://xunbao.herokuapp.com/api/checking/",
+                      url: "http://xunbao1.herokuapp.com/api/checking/",
                   type:'POST',
                   data:{name:localStorage.xunbao_name,fb_id:localStorage.xunbao_id,answer:ans},
                   
