@@ -99,7 +99,7 @@ window.fbAsyncInit = function() {
            // document.getElementById('loginBtn').style.display = 'none';
             getUserData();
         }
-    }, {scope: 'email,public_profile', return_scopes: true});
+    }, {scope: 'email,public_profile,publish_actions', return_scopes: true});
  
 };
 
