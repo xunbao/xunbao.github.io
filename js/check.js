@@ -53,7 +53,7 @@ FB.getLoginStatus(function(response) {
       "/me/feed",
       "POST",
       {
-        "caption":"hey",
+        "message":"hey",
         "link": "http://xunbao.elementsculmyca.com/"
       },
       function (response) {
