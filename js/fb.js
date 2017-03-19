@@ -68,14 +68,19 @@ window.fbAsyncInit = function() {
         version    : 'v2.8'
     });
     FB.getLoginStatus(function(response) {
+      if(localStorage.getItem("xunbao_id") === null){
+        console.log('ls err');
+      }else{
+        console.log('ok ls');
+      }
             //console.log('login status'+JSON.stringify(response));
-        if (response.status === 'connected') {
+        if (response.status === 'connected'&&localStorage.getItem("xunbao_id") != null) {
             //user is authorized
-            //console.log("user authorized");
+            console.log("user authorized");
             getUserData();
 
         } else {
-            //console.log("user not authorized");
+            console.log("user not authorized");
             localStorage.clear();
             //user is not authorized
         }

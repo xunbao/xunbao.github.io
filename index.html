@@ -2,162 +2,205 @@
 <html lang="en" style="height: 100%;">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Xunbao | Elements Culmyca</title>
+  <title>Xunbao | Elements Culmyca</title>
+  <!-- for Google -->
+  <meta name="description" content="Online treasure hunt | Elements Culmyca 2017" />
+  <meta name="keywords" content="xunbao,treasure,hunt,manan,college,fest,elements,culmyca,ymca,2017" />
+  <meta name="author" content="Manan.Tech" />
+  <meta name="copyright" content="vipinkhushu@hotmail.com" />
+  <meta name="application-name" content="Xunbao" />
+  <!-- for Facebook -->
+  <meta property="og:url"                content="http://xunbao.elementsculmyca.com/" />
+  <meta property="og:title"              content="Xunbao | Elements Culmyca" />
+  <meta property="og:description"        content="Online treasure hunt | Elements Culmyca 2017" />
+  <meta property="og:image"              content="http://xunbao.elementsculmyca.com/fb-cover.png" />
+  <meta property="og:site_name"          content="Xunbao | Elements Culmyca" />
+  <meta property="fb:app_id"             content="1572211359712500" />
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    
-    <!-- Custom styles for this template -->
-    <link href="css/stylex.css" rel="stylesheet">
-    <link href="css/model.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/stylex.css" rel="stylesheet">
+  <link href="css/model.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 
 <body style="height: 99%;">
-    <!--The Header-->
-        <div class="container-fluid row header" style="text-align: center;width: 100%;">
-            <div class="col-md-4" style="border: 0px solid red;border-radius: 0px 0px 0px 10px;text-align: left;padding-left: 4%;">
-              <h2><a class="ok"href="questions.html">Xunbao</a></h3>
-            </div>
-            <div class="col-md-2 ld" style="border-left: 1px solid black">
-              <h5><a class="ok" href="leaderboard.html">Leaderboard</a></h5>
-            </div>
-            <div class="col-md-2 pr" id="prizes">
-              <h5>Prizes</h5>
-            </div>
-            <div class="col-md-2 de" id="developer">
-              <h5>Developer</h5>
-            </div>
-            <div class="col-md-2 lo" style="">
-              <h5 id="loginBtn1">Login</h5>
-            </div>
-          </div>
+  <!--The Header-->
+  <div class="container-fluid row header" style="text-align: center;width: 100%;">
+    <div class="col-md-4" style="border: 0px solid red;border-radius: 0px 0px 0px 10px;text-align: left;padding-left: 4%;">
+      <h2><a class="ok" href="questions.html"><img src="img/logo.png"></a></h3>
+      </div>
+      <a class="ok" href="leaderboard.html">
+      <div class="col-md-2 ld" style="border-left: 1px solid black">
+        <h5>Leaderboard</h5>
+      </div>
+      </a>
+      <div class="col-md-2 pr" id="prizes" style="cursor: pointer;">
+        <h5>Prizes</h5>
+      </div>
+      <div class="col-md-2 de" id="developer" style="cursor: pointer;">
+        <h5>The team</h5>
+      </div>
+      <div class="col-md-2 lo" style="" style="cursor: pointer;">
+        <h5 id="loginBtn1">Login</h5>
+      </div>
+    </div>
 
-      <!--The Body-->
+    <!--The Body-->
     <div class="container-fluid wrapper" style="height:90%;">
-        <div class="row" style="height: 100%">
+      <div class="row" style="height: 100%">
         <div class="col-md-2">
-        
+
         </div>
         <div class="col-md-8" style="position: relative;">
           <div class="container inbox">
-              <h3>Welcome to Xunbao!</h3>
-              <img src="img/logo1.png" width="80%"><br>
-              <button class="fb" id="loginBtn">
-               Facebook Login
-              </button>
-          </div>
-        </div>
-        <div class="col-md-2">
-          
-        </div>
-        </div>
-    </div>
-     <div id="loadModel" class="modal">
-  <!-- Modal content -->
-  <div class="modal-content">
-    <div class="modal-body body-2">
-      <img width="100%" height="100%" alt="" src="img/loading.gif">
-    </div>
-  </div>
-</div>
+            <h3>Welcome to Xunbao!</h3>
+            <img src="img/logo1.png" width="80%"><br>
+            <button class="fb" id="loginBtn">
+             Facebook Login
+           </button>
+         </div>
+       </div>
+       <div class="col-md-2">
 
-<div id="responseModel" class="modal">
-  <!-- Modal content -->
-  <div class="modal-content">
-    <div class="modal-header body-2">
-     <span id="close-span">x</span>
-      <p id="response">Your Query has been submitted</p>
-    </div> 
-  </div>
-</div>
-  <!--Prizes-->
-    <div id="prizeModel" class="modal">
-  <!-- Modal content -->
-  <div class="modal-content">
-    <div class="modal-body body-2">
-        <span id="close-spanx" style="
-          position:absolute;right:9px;top:-6px;font-size:25px">
-          x
-        </span>
-      <h1>1st Prize</h1>
-      <div class="cards">
-       Cash Prize - 500rs/-<br> + Bluetooth Speaker<br>+ Certificate
-      </div><br>
-      <h2>2nd Prize</h2>
-      <div class="cards">
-       Cash Prize - 300rs/-<br>+ VR Handset<br>+  Certificate
-      </div><br>
-      <h3>3rd Prize</h3>
-      <div class="cards">
-       Cash Prize - 200rs/-<br>+ Certificate
+       </div>
+     </div>
+   </div>
+   <div id="loadModel" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-body body-2">
+        <img width="100%" height="100%" alt="" src="img/loading.gif">
       </div>
-
     </div>
   </div>
+
+  <div id="responseModel" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header body-2">
+       <span id="close-span">x</span>
+       <p id="response">Your Query has been submitted</p>
+     </div> 
+   </div>
+ </div>
+ <!--Prizes-->
+ <div id="prizeModel" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body body-2">
+      <span id="close-spanx" style="
+      position:absolute;right:9px;top:-6px;font-size:25px">
+      x
+    </span>
+    <h1>1st Prize</h1>
+    <div class="cards">
+     Cash Prize - 500rs/-<br> + Bluetooth Speaker<br>+ Certificate
+   </div><br>
+   <h2>2nd Prize</h2>
+   <div class="cards">
+     Cash Prize - 300rs/-<br>+ VR Handset<br>+  Certificate
+   </div><br>
+   <h3>3rd Prize</h3>
+   <div class="cards">
+     Cash Prize - 200rs/-<br>+ Certificate
+   </div>
+
+ </div>
 </div>
-  <!--Developers-->
-  <div id="devModel" class="modal">
+</div>
+<!--Developers-->
+<div id="devModel" class="modal">
   <!-- Modal content -->
   <div class="modal-contentx" style="border:0px solid red; border-radius: 5px 5px 5px 5px;">
     <div class="modal-body">
       <span id="close-spanz" style="
-          position:absolute;right:9px;top:-6px;font-size:25px;z-index:1000
+      position:absolute;right:9px;top:-6px;font-size:25px;z-index:1000
       ">
-        x
-      </span>
-     <h1><center>The Backstage Heroes!</center></h1>
-     <div class="container-fluid row" style="text-align:center;padding:2%;">
-      <div class="col-md-6 backin">
+      x
+    </span>
+    <h1><center>The Backstage Heroes!</center></h1>
+    <div class="container-fluid row" style="text-align:center;padding:2%;">
+      <div class="col-md-4 backin">
         <img src="img/web_sameer.jpg" class="img-responsive devimg" style="
         margin-left:auto;margin-right:auto;display:block;opacity:0;">
         <h3 class="devname" style="transform:translateY(-200px);">Sameer Taneja<br>
-        Backend Developer</h3>
-      </div>
-      <div class="col-md-6 backin">
-        <img src="img/web_aakash.jpg" class="img-responsive devimg" style="
-        margin-left:auto;margin-right:auto;display:block;opacity:0;">
-        <h3 class="devname" style="transform:translateY(-200px)">Aakash<br>
-        Frontend Developer</h3>
-      </div>
+          Backend Developer</h3>
+        </div>
+        <div class="col-md-4 backin">
+          <img src="img/web_aakash.jpg" class="img-responsive devimg" style="
+          margin-left:auto;margin-right:auto;display:block;opacity:0;">
+          <h3 class="devname" style="transform:translateY(-200px)">Aakash<br>
+            Frontend Developer</h3>
+          </div>
+          <div class="col-md-4 backin">
+          <img src="img/web_viru.jpg" class="img-responsive devimg" style="
+          margin-left:auto;margin-right:auto;display:block;opacity:0;">
+          <h3 class="devname" style="transform:translateY(-200px)">Virender<br>
+            Database Developer</h3>
+          </div><br/>
+          <div class="col-md-12 backin">
+          <h2>Content writers</h2>
+          </div>
+          <div class="col-md-3 backin">
+          <img src="img/content_ayushi.jpg" class="img-responsive devimg" style="
+          margin-left:auto;margin-right:auto;display:block;opacity:0;">
+          <h3 class="devname" style="transform:translateY(-200px)">Ayushi</h3>
+          </div>
+          <div class="col-md-3 backin">
+          <img src="img/content_garima.jpg" class="img-responsive devimg" style="
+          margin-left:auto;margin-right:auto;display:block;opacity:0;">
+          <h3 class="devname" style="transform:translateY(-200px)">Garima
+          </div>
+          <div class="col-md-3 backin">
+          <img src="img/content_himani.jpg" class="img-responsive devimg" style="
+          margin-left:auto;margin-right:auto;display:block;opacity:0;">
+          <h3 class="devname" style="transform:translateY(-200px)">Himani
+          </div>
+          <div class="col-md-3 backin">
+          <img src="img/content_kushank.jpg" class="img-responsive devimg" style="
+          margin-left:auto;margin-right:auto;display:block;opacity:0;">
+          <h3 class="devname" style="transform:translateY(-200px)">Kushank
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/fb.js" ></script><script src="js/fb.js" ></script>
 <script>
-$(document).ready(function() {
-  $('#prizes').click(function(){
-  var prizeModel=document.getElementById('prizeModel');
-              prizeModel.style.display="block";
-});
-  $('#close-spanx').click(function() {
-    $('#prizeModel').css({"display":"none"});
-});
+  $(document).ready(function() {
+    $('#prizes').click(function(){
+      var prizeModel=document.getElementById('prizeModel');
+      prizeModel.style.display="block";
+    });
+    $('#close-spanx').click(function() {
+      $('#prizeModel').css({"display":"none"});
+    });
     $('#developer').click(function(){
-  var devModel=document.getElementById('devModel');
-              devModel.style.display="block";
-  setTimeout(function(){ 
-    $('.devname').css({"opacity":"1"})
-   }, 700);
-  setTimeout(function(){ 
-    $('.devname').css({"transform":"translateY(0px)"})
-   }, 1000);
-  setTimeout(function(){ 
-    $('.devimg').css({"opacity":"1"})
-   }, 2000);
-});
-  $('#close-spanz').click(function() {
-    $('#devModel').css({"display":"none"});
-});
-});
+      var devModel=document.getElementById('devModel');
+      devModel.style.display="block";
+      setTimeout(function(){ 
+        $('.devname').css({"opacity":"1"})
+      }, 700);
+      setTimeout(function(){ 
+        $('.devname').css({"transform":"translateY(0px)"})
+      }, 1000);
+      setTimeout(function(){ 
+        $('.devimg').css({"opacity":"1"})
+      }, 2000);
+    });
+    $('#close-spanz').click(function() {
+      $('#devModel').css({"display":"none"});
+    });
+  });
   
 </script>
 </html>
